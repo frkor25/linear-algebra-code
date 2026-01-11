@@ -2,9 +2,8 @@ import numpy as np
 from sympy import Matrix
 
 # Define the matrix A as a NumPy array
-A = np.array([[-2, -4,  2,  2],
-              [ 3,  6, -3, -3],
-              [ 1,  2,  0,  1]])
+A = np.array([[1, 2,  3,  4],
+              [ 0,  0, 1, 2]])
 
 # Compute the REF
 sympy_matrix_pre_ref = Matrix(A)                                # 1. Convert NumPy array to SymPy Matrix
