@@ -2,21 +2,21 @@ import numpy as np
 
 # Define vectors as a list (can add as many as needed)
 vectors = [
-    np.array([[1],
-              [2],
-              [3]]),
-    
     np.array([[2],
+              [1],
+              [-1]]),
+    
+    np.array([[1],
               [0],
               [1]]),
     
     np.array([[1],
               [1],
-              [1]])
+              [-2]])
 ]
 
 # Define coefficients (must match number of vectors)
-coefficients = [2, -1, 3]
+coefficients = [0, 1, -3]
 
 # Verify same number of vectors and coefficients
 if len(vectors) != len(coefficients):
