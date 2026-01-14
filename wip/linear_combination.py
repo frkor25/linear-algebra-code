@@ -16,7 +16,7 @@ vectors = [
 ]
 
 # Define coefficients (must match number of vectors)
-coefficients = [0, 1, -3]
+coefficients = [4, 3, -4]
 
 # Verify same number of vectors and coefficients
 if len(vectors) != len(coefficients):

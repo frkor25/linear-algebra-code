@@ -1,15 +1,14 @@
 import numpy as np
 
 # Define the matrix A
-A = np.array([[1, 0, 2, -1],
-              [2, -1, 0, 1],
-              [3, 1, 3, 1]])
+A = np.array([[1, 3],
+              [-2, -1],
+              [1, -3],
+              [0, 4]])
 
 # Define the vector x
 x = np.array([[2],
-              [-1],
-              [1],
-              [4]])
+              [1]])
 
 # Perform matrix-vector multiplication
 result = A @ x

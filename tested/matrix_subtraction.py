@@ -1,12 +1,12 @@
 import numpy as np
 
 # Define the matrix A as a NumPy array
-A = np.array([[ 3,  2],
-              [-1,  1]])
+A = np.array([[1, 0, 1],
+              [0, 1, 2]])
 
 # Define the matrix B as a NumPy array
-B = np.array([[ 2,  2],
-              [-4,  2]])
+B = np.array([[4, 2, 12],
+              [10, 6, 4]])
 
 # Perform matrix subtraction
 result = A - B

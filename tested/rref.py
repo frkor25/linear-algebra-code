@@ -3,9 +3,8 @@ import numpy as np
 from sympy import Matrix
 
 # Define the matrix A as a NumPy array
-A = np.array([[2, 3, 4],
-              [2, 3, 4],
-              [1, 0, 2]])
+A = np.array([[1, 2, 3, 4],
+              [0, 0, 1, 2]])
 
 
 # Compute the RREF

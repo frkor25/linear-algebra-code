@@ -215,7 +215,7 @@ def get_parametric_solution(result):
 def print_solution(result):
     """Print solution based on system type"""
     if result["solution_type"] == "INCONSISTENT":
-        print("✗ No solution exists for this system.")
+        print("No solution exists for this system.")
         return
     
     if result["solution_type"] == "UNIQUE":
@@ -299,14 +299,15 @@ def print_solution(result):
             
             # Add basis vector contributions
             for j, vec in enumerate(parametric["basis_vectors"]):
+                symbol = "α" if j == 0 else ("β" if j == 1 else f"c{j + 1}")
                 coeff = vec[var_name]
                 if not np.isclose(coeff, 0):
                     if np.isclose(coeff, 1):
-                        terms.append(f"c{j + 1}")
+                        terms.append(f"{symbol}")
                     elif np.isclose(coeff, -1):
-                        terms.append(f"-c{j + 1}")
+                        terms.append(f"-{symbol}")
                     else:
-                        terms.append(f"{coeff:.6f}*c{j + 1}")
+                        terms.append(f"{coeff:.6f}*{symbol}")
             
             expr = " + ".join(terms).replace("+ -", "- ")
             print(f"  {var_name} = {expr}")
@@ -318,10 +319,11 @@ def print_solution(result):
 if __name__ == "__main__":
     # Example: Non-homogeneous with infinite solutions
     A = [
-        [1, -2],
-        [2, -1]
-    ]
-    b = [3, 0]
+        [2, 1],
+        [3, 7],
+        ]
+    
+    b = [1, -2]
     
     print("\n" + "=" * 60)
     print("SOLVING LINEAR SYSTEM")

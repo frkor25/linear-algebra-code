@@ -4,8 +4,8 @@ import numpy as np
 c = 2
 
 # Define the matrix A as a NumPy array
-A = np.array([[1, 1],
-              [-2, 1]])
+A = np.array([[1,  1],
+              [-2,  1]])
 
 # Perform scalar multiplication
 result = c * A

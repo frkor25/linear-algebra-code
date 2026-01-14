@@ -5,9 +5,8 @@ from sympy import Matrix
 # System: 2x + 3y + z = 11
 #         x - y + 2z = 8
 #         3x + y - z = 6
-A = np.array([[2, 3, 1, 11],
-              [1, -1, 2, 8],
-              [3, 1, -1, 6]], dtype=np.float64)
+A = np.array([[1,  0],
+              [0, 1]], dtype=np.float64)
 
 # Convert to SymPy Matrix for row reduction
 sympy_matrix = Matrix(A)

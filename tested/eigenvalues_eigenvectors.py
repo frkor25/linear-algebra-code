@@ -62,8 +62,7 @@ def eigen_analysis(A):
 
 
 # ====== INDSÆT KUN MATRIXEN HER ======
-A = np.array([[2, 2, 2],
-              [2, 2, 2],
-              [2, 2, 2]])
+A = np.array([[7, 6],
+              [6, -2]])
 
 eigen_analysis(A)

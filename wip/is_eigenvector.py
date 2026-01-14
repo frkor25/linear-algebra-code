@@ -1,12 +1,11 @@
 import numpy as np
 
 # Define the matrix A as a NumPy array
-A = np.array([[0, 6, 8],
-              [0.5, 0, 0],
-              [0, 0.5, 0]])
+A = np.array([[7, 6],
+              [6, -2]])
 
 # Define a potential eigenvector
-v = np.array([16, 4, 1])
+v = np.array([-1, 2])
 
 # Check if v is an eigenvector of A
 # A vektor v is an eigenvector of A if A @ v = λ * v for some scalar λ
